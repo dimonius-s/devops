@@ -85,6 +85,21 @@ IP адреса необходимо скопировать в host.txt папк
 12. Установка `monitoring` на srv-узле в котором будет `alertmanager`, `grafana`, `prometheus` `node_exporter`, `blackbox_exporter` и `fluentd`.
 13. В данном проекте используется официальный репозиторий GitLab.
 
+### Сервисы
+
+* **Django**: основной сервис приложения. http://din-it.tech
+* **Мониторинг**: мониторинг сервисов приложения. 
+* **Grafana**: мониторинг сервисов приложения. http://89.169.141.27:3000
+* **Prometheus**: мониторинг сервисов приложения. http://89.169.141.27:9090
+* **Alertmanager**: мониторинг сервисов приложения. http://89.169.141.27:9093
+* **Node exporter**: мониторинг сервисов приложения. http://89.169.141.27:9100
+* **Blackbox exporter**: мониторинг сервисов приложения. http://89.169.141.27:9115
+
+Сборка проекта проиизводится в репозитории [dimonius](https://gitlab.com/shchepelin.dm/django-app)
+* **django-app**: Helm chart копируемый с репозитория и устанавливаемый на master node через Ansible.
+* **django-pg-docker-tutorial-master**: Посредством Docker compose производится сборка приложения с отправкой в docker hub.
+* Установка на worker node через Ansible.
+
 ### Автор
 
 [dimonius]
