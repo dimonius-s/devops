@@ -1,0 +1,8 @@
+venv/*
+terraform/.terraform/*
+terraform/terraform.tfstate  
+terraform/terraform.tfstate.backup
+tarrfafrom/terraform.tfvars
+terraform/.terraform.lock.hcl
+terraform/.python-version
+.idea/*

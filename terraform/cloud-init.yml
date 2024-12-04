@@ -1,0 +1,8 @@
+users:
+  - name: ubuntu
+    homedir: /home/ubuntu
+    groups: sudo
+    shell: /bin/bash
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMwRiWgx6Mg28JdQtjuR8d92T/r5bjK1imEO04eFXkDZ yc ubuntu
